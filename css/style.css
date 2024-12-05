@@ -5,7 +5,7 @@ body {
 }
 
 .headerContainer {
-    height: 10vh;
+    height: 12vh;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -15,35 +15,40 @@ body {
 }
 
 .logo img {
-    height: 80%;
+    height: 80px;
 }
 
+/* Estilos de navegación */
 nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+  width: 100%; /* Asegura que el nav ocupe el ancho completo */
+  max-width: 800px; /* Establece un máximo para que no ocupe toda la pantalla */
 }
 
 nav a {
-    text-decoration: none;
-    color: rgb(63, 42, 25); 
-    font-weight: bold;
-    font-family: "Noto Serif Malayalam", serif;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: color 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+  color: rgb(63, 42, 25); 
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Noto Serif Malayalam", serif;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav a:hover {
-    color: bisque;
-    background-color: rgb(63, 42, 25); /* Fondo marrón en hover */
+  color: bisque;
+  background-color: rgb(63, 42, 25);
 }
 
-
-h2, p{
-    margin: 0 auto;
+/* Centrado de títulos y párrafos */
+h2, p {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .home {
